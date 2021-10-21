@@ -60,7 +60,32 @@
       const elementH1 = document.createElemnt('h1');
       elementH1.innerText = 'Exercicio 5.2 - JavaScript DOM';
       document.body.appendChild(elementH1);
-      
+
+      const elementMain = document.createElement('main');
+      elementMain.className = 'main-content';
+      document.body.appendChild(elementMain);
+
+      const elementSectionCenter = document.createElement('Section');
+      elementSectionCenter.className = 'center-content';
+      document.elementMain.appendChild(elementSectionCenter);
+
+      const elementP = document.createElement('p');
+      elementP.innerHTML = 'Quero virar um super Dev, ganhar muito dinheiro e ir pro canada morar la e construir minha familia e ganhar muitos dol e andar de Ferrari';
+      elementSectionCenter.appendChild(elementP);
+
+      const elementSectionLeft = document.createElement('Section');
+      elementSectionLeft.classNme = 'left-content';
+      document.elementMain.appendChild(elementSectionLeft);
+
+      const elementSectionRight = document.createElement('Section');
+      elementSectionRight.classNme = 'right-content';
+      document.elementMain.appendChild(elementSectionRight);
+
+      const elementImg = document.createElement('img');
+      elementImg.className = 'small-image';
+      elementImg.src = 'https://picsum.photos/200';
+      elementSectionLeft.appendChild(elementImg);
+
 
 
 
