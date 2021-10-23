@@ -47,3 +47,46 @@ function createDaysOfTheMonth() {
   };
 };
 createDaysOfTheMonth();
+
+function createHolyDayButton(buttonName) {
+  let containerElement = document.querySelector('.buttons-container');
+  let newButton = document.createElement('button');
+  let newButtonId = 'btn-holiday';
+  
+  newButton.innerHTML = buttonName;
+  newButton.id = newButtonId;
+  containerElement.appendChild(newButton);
+};
+createHolyDayButton('Feriados');
+
+function changeColor () {
+  let holidayElement = document.querySelectorAll('.holiday');
+  let buttonHoliday = document.querySelector('#btn-holiday');
+  let newColor = 'orange';
+  let backColor = 'rgb(238,238,238)';
+
+  buttonHoliday.addEventListener('click', function () {
+    for (let i = 0; i < holidayElement.length; i += 1){
+      if (holidayElement[i].style.backgroundColor === newColor) {
+        holidayElement[i].style.backgroundColor = backColor
+      } else {
+        holidayElement[i].style.backgroundColor = newColor
+      };
+    };
+  });
+};
+changeColor();
+      
+
+      
+      
+      
+    
+
+
+
+
+
+
+
+
