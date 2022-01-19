@@ -8,5 +8,20 @@ function seletorDeEstado() {
     option.value = stateOptions[i];
     states.appendChild(option);
   }
-}
+} 
 seletorDeEstado();
+
+function validationName(input, name) {
+  let trimmed = input.value.trim();
+  let validation = inputs[name];
+
+  if(validation.required && trimmed.length === 0) {
+    return false;
+  }
+
+  if(validation.maxLength && trimmed.length > validation.maxLength) {
+    return false;
+  }
+
+  return true;
+}
